@@ -40,9 +40,9 @@ const ChipItGolf = () => {
     return totalDistance < carryDistance
       ? "Calm down hulk"
       : clubSelection < 5
-        ? "Add more carry to the shot selection"
+        ? "Add more carry distance to the shot selection"
         : !(clubMap[clubSelection])
-          ? "Putt it in, Please"
+          ? "Putter"
           : clubMap[clubSelection];
   };
 

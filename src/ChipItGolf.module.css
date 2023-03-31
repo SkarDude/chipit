@@ -101,16 +101,26 @@
     position: absolute;
     display: none;
     top: 100%;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.75);
     color: white;
     padding: 10px;
     border-radius: 5px;
     font-size: 14px;
-    white-space: nowrap;
+    white-space: pre-wrap;
+    word-wrap: break-word;
     z-index: 2;
+    max-width: 90%;
+    text-align: center;
   }
 
+  @media (max-width: 768px) {
+    .infoTooltip {
+      font-size: 12px;
+      white-space: normal;
+    }
+  }
   .infoIcon:hover + .infoTooltip {
     display: block;
   }
