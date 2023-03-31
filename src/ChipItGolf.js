@@ -41,7 +41,9 @@ const ChipItGolf = () => {
       ? "Calm down hulk"
       : clubSelection < 5
         ? "Add more carry to the shot selection"
-        : clubMap[clubSelection];
+        : !(clubMap[clubSelection])
+          ? "Putt it in, Please"
+          : clubMap[clubSelection];
   };
 
   const getGreenSpeedLabel = (value) => {
